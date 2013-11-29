@@ -40,7 +40,7 @@ client.init({ token: 'YOUR_TOKEN' });
 
 // get your info.
 client.get('me', function (err, res) {
-    console.log(res.body);
+    console.log(res);
 });
 
 // create room.
@@ -67,7 +67,7 @@ client.init({ token: 'YOUR_TOKEN' });
 client
     .get('me')
     .done(function (res) {
-        console.log(res.body)
+        console.log(res)
     })
     .fail(function (err) {
         console.error(err);
