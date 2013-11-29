@@ -39,7 +39,7 @@ var CW = require('/lib/vendor/simple-cw-titanium/chatwork'),
 client.init({ token: 'YOUR_TOKEN' });
 
 // get your info.
-client.get('me', function (err, res) {
+client.get('me', function (err, res, data) {
     console.log(res);
 });
 
@@ -66,7 +66,7 @@ client.init({ token: 'YOUR_TOKEN' });
 // get your info.
 client
     .get('me')
-    .done(function (res) {
+    .done(function (res, data) {
         console.log(res)
     })
     .fail(function (err) {
